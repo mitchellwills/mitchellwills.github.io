@@ -1,0 +1,105 @@
+[
+	{
+		company: "WPI FIRST Robotics Library",
+		companyLink: "http://usfirst.collab.net",
+		title: "Software Developer",
+		location: "Worcester, MA",
+		date: "September 2011 – Present",
+		properties: [
+		{
+			label: "Technologies",
+			values: ["Java", "C++"],
+		}
+		],
+		descriptions: [
+		"Developed programming libraries for thousands of high school students",
+		"Developed cross-language, table-based communication library",
+		"Implemented distributed testing framework",
+		"Improved continuous integration build process",
+		],
+		projectIds: ["NetworkTables",],
+	},
+	{
+		company: "Microsoft",
+		companyLink: "http://microsoft.com",
+		title: "Foundry Developer Intern",
+		location: "Cambridge, MA",
+		date: "June 2013 – August 2013",
+		properties: [
+		{
+			label: "Technologies",
+			values: ["C#", "XAML", "WinRT"],
+		}
+		],
+		descriptions: [
+		"Developed Windows 8 game (WeeCoder) to teach programming to young children",
+		"Participated in entire software development process from design to testing",
+		],
+		projectIds: ["WeeCoder",],
+	},
+	{
+		company: "WPI Interactions Lab",
+		companyLink: "http://web.cs.wpi.edu/~rich/hri/",
+		title: "Research Assistant",
+		location: "Worcester, MA",
+		date: "May 2012 – August 2012",
+		properties: [
+		{
+			label: "Technologies",
+			values: ["C#", "XAML"],
+		}
+		],
+		descriptions: [
+		"Always On Project",
+		"Implemented calendaring API",
+		"Developed ontologies for storing user data",
+		"Developed a Virtual Human Agent",
+		],
+		projectIds: ["AlwaysOn",],
+	},
+	{
+		company: "MITRE",
+		companyLink: "http://mitre.org",
+		title: "Summer Intern",
+		location: "Bedford, MA",
+		date: "June 2011 – August 2011",
+		properties: [
+		{
+			label: "Technologies",
+			values: ["C", "C++"],
+		}
+		],
+		descriptions: [
+		"Developed tests for software security software",
+		"Participated in software security capture the flag event",
+		],
+	},
+	{
+		company: "Boston Museum of Science",
+		companyLink: "http://mos.org",
+		title: "Volunteer",
+		location: "Boston, MA",
+		date: "June 2010 – August 2011",
+		descriptions: [
+		"Educated visitors of the museum",
+		"Aided in day-to-day operation of Cahners ComputerPlace",
+		],
+	},
+	{
+		company: "Azuki Systems",
+		companyLink: "http://www.azukisystems.com/",
+		title: "Summer Intern",
+		location: "Acton, MA",
+		date: "June 2010 – August 2010",
+		properties: [
+		{
+			label: "Technologies",
+			values: ["C++", "Java", "Android"],
+		}
+		],
+		descriptions: [
+		"Investigated application security on mobile devices",
+		"Ported libraries to multiple languages",
+		],
+	},
+]

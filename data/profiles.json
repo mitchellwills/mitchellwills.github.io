@@ -1,0 +1,25 @@
+[
+	{
+		title: "Linkedin",
+		url: "http://www.linkedin.com/in/mitchellwills/",
+		iconClass: "fa fa-linkedin-square fa-lg fa-fw",
+		color: "#007bb6",
+	},
+	{
+		title: "Google+",
+		url: "http://plus.google.com/+MitchellWills",
+		iconClass: "fa fa-google-plus-square fa-lg fa-fw",
+		color: "#dd4b39",
+	},
+	{
+		title: "Facebook",
+		url: "http://www.facebook.com/mitchellewills",
+		iconClass: "fa fa-facebook-square fa-lg fa-fw",
+		color: "#3b5998",
+	},
+	{
+		title: "Github Profile",
+		url: "http://github.com/mitchellwills",
+		iconClass: "fa fa-github fa-lg fa-fw",
+	},
+]

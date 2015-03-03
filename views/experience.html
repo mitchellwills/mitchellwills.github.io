@@ -1,0 +1,44 @@
+<div class="container">
+	<h1>Experience</h1>
+	<div class="row" ng-mouseleave="unhoverItem()">
+		<div class="col-md-4">
+			<div ng-repeat="item in work" class="work-item no-select" ng-class="{active: hover.item==item, clicked: hover.item==item&&hover.clicked}" ng-mouseenter="hoverItem(item)" ng-click="clickItem(item)">
+				<span class="work-title">{{item.title}}</span>
+				<span class="work-company">{{item.company}}</span>
+				<span class="work-sub"><span class="work-date">{{item.date}}</span> | <span class="work-location">{{item.location}}</span></span>
+			</div>
+		</div>
+		<div class="col-md-8 work-more-info">
+			<div ng-show="hover.item">
+				<span class="work-title">{{hover.item.title}}</span>
+				<span class="work-company">{{hover.item.company}}</span>
+				<span class="work-sub"><span class="work-date">{{hover.item.date}}</span> | <span class="work-location">{{hover.item.location}}</span></span>
+
+				<div class="work-descriptions">
+					<div>
+						<span ng-repeat="description in hover.item.descriptions" class="work-description">{{description}}</span>
+					</div>
+				</div>
+				<div class="work-properties">
+					<div ng-repeat="property in hover.item.properties" class="work-property">
+						<span class="work-property-label">{{property.label}}:</span>
+						<span ng-if="property.values" ng-repeat="item in property.values" class="work-property-value">{{item}}<span ng-if="!$last">, </span></span>
+						<span ng-if="property.value" class="work-property-value">{{property.value}}</span>
+					</div>
+				</div>
+
+				<div class="work-projects">
+					<tile class="small" ng-repeat="projectId in hover.item.projectIds" ng-init="project = ProjectService.projectFromId(projectId)" ng-click="ProjectService.navToProject(project)" label="{{project.title}}" sublabel="{{project.subtitle}}" content-background="{{ProjectService.projectBackgroundStyle(project)}}"></tile>
+				</div>
+			</div>
+
+			<div ng-hide="hover.item">
+				<h3>Skills</h3>
+				<div ng-repeat="skill in skills">
+					<span class="skill-title">{{skill.title}}:</span>
+					<span ng-repeat="item in skill.items">{{item}}<span ng-if="!$last">, </span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

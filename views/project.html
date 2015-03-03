@@ -1,0 +1,33 @@
+<div class="container">
+	<h1 style="margin-bottom:0px;">{{project.fullTitle?project.fullTitle:project.title}}</h1>
+	<a href="/projects" class="projects-back"><span class="glyphicon glyphicon-chevron-left"/><span>back to projects</span></a>
+	<p>
+		{{project.description}}
+	</p>
+
+	<div class="project-properties">
+		<div ng-repeat="property in project.properties" class="project-property">
+			<span class="project-property-label">{{property.label}}:</span>
+			<span ng-if="property.values" ng-repeat="item in property.values" class="project-property-value">{{item}}<span ng-if="!$last">, </span></span>
+			<span ng-if="property.value" class="project-property-value">{{property.value}}</span>
+		</div>
+	</div>
+
+
+	<div ng-if="project.media">
+		<h3>Media</h3>
+		<tile ng-repeat="media in project.media" ng-click="selectMedia(media)" label="{{media.label}}" sublabel="" content-background="url('{{mediaThumbnail(media)}}')">
+			<div ng-if="media.type=='youtube'" class="tile-content-center-text">
+				<span class="glyphicon glyphicon-play-circle" style="font-size:40px;color:#eeeeee;"/>
+			</div>
+		</tile>
+	</div>
+
+	<div ng-if="project.links">
+		<h3>Links</h3>
+		<ul>
+			<li ng-repeat="link in project.links"><a href="{{link.url}}">{{link.label}}</a></li>
+		</ul>
+	</div>
+
+</div>

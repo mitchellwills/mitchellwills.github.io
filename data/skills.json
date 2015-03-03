@@ -1,0 +1,18 @@
+[
+	{
+		title: "Fluent Programming Languages",
+		items: ["Java", "C", "C++", "C#", "XAML", "Javascript", "HTML"],
+	},
+	{
+		title: "Familiar With",
+		items: ["Python", "Racket (LISP)", "Bash"],
+	},
+	{
+		title: "Applications",
+		items: ["Eclipse", "NetBeans", "Visual Studio", "Microsoft Office", "SolidWorks"],
+	},
+	{
+		title: "Platforms",
+		items: ["Windows", "Linux", "Embedded Systems", "ROS (Robot Operating System)", "Web"],
+	},
+]

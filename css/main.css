@@ -1,0 +1,221 @@
+html, body{
+	width:100%;
+	height:100%;
+}
+.main-view .container{
+	background-color: rgba(242, 242, 242, 0.9);
+	padding: 0px 15px 15px 15px;
+}
+
+.no-select{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+
+
+.projects-back{
+    position:relative;
+    top:-5px;
+    margin-left:5px;
+    font-size: 12px;
+}
+.projects-back:hover{
+    text-decoration: none;
+}
+.project-back .glyphicon{
+    font-size: 11px;
+}
+.project-properties{
+	margin-top:3px;
+	font-size: 12px;
+}
+.project-property-label{
+	font-weight: bold;
+}
+.project-property-value{
+}
+
+
+
+/* Offset lightbox next/previous outside content area */
+.fancybox-next {
+    right: -60px;
+}
+.fancybox-prev {
+    left: -60px;
+}
+.fancybox-type-iframe .fancybox-prev, .fancybox-type-iframe .fancybox-next {
+    width: 60px;
+}
+
+
+.work-item{
+	margin-bottom:5px;
+	cursor:pointer;
+	padding:5px;
+}
+.work-item.active{
+	background-color: #cccccc;
+}
+.work-item.active.clicked{
+	background-color: #bbbbbb;
+}
+.work-title{
+	font-size: 16px;
+	font-weight: bold;
+	display:block;
+}
+.work-company{
+	font-size: 15px;
+	display:block;
+}
+.work-sub{
+	font-size: 14px;
+	color:#777777;
+	display:block;
+}
+.work-more-info{
+}
+.work-descriptions{
+	margin-top:8px;
+	font-size: 14px;
+}
+.work-description{
+	display:block;
+}
+.work-projects{
+	margin-top:8px;
+}
+
+.work-properties{
+	margin-top:3px;
+	font-size: 12px;
+}
+.work-property-label{
+	font-weight: bold;
+}
+.work-property-value{
+}
+
+
+
+.skill-title{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+
+
+.main-view{
+    position: absolute;
+    padding-top: 50px; /* bootstrap top navbar padding */
+    width:100%;
+}
+
+.main-view.ng-enter,
+.main-view.ng-leave {
+  -webkit-transition:0.25s linear all;
+  transition:0.25s linear all;
+}
+
+.main-view.ng-enter,
+.main-view.ng-leave.ng-leave-active {
+  opacity:0;
+}
+.main-view.ng-leave,
+.main-view.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+
+
+
+
+
+
+
+/* TILES */
+.tile{
+    width: 200px;
+    height: 200px;
+    background: #eeeeee;
+    overflow:hidden;
+    cursor:pointer;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    box-shadow: 0px 0px 3px #FFFFCC;
+}
+.tile:hover{
+    outline:#999999 solid 3px;
+}
+.tile:active{
+    outline:0;
+}
+.tile-content{
+    width: 200px;
+    height: 200px;
+}
+.tile-content img{
+    max-width: 100%;
+}
+.tile-content-center-text{
+    line-height: 200px;
+    width: 100%;
+    text-align: center;
+}
+.tile-label{
+    position:relative;
+    width: 200px;
+    height: 42px;
+    top: -42px;
+    color:#eeeeee;
+    background: rgba(100, 100, 100, 0.9);
+    padding: 3px 3px 3px 7px;
+    font-size:12px;
+}
+.tile-label-sub{
+	display:block;
+	padding-left:5px;
+}
+/* Small Tile */
+.tile.small{
+    width: 150px;
+    height: 150px;
+}
+.tile.small .tile-content{
+    width: 150px;
+    height: 150px;
+}
+.tile.small .tile-content-center-text{
+    line-height: 150px;
+}
+.tile.small .tile-label{
+    width: 150px;
+    height: 36px;
+    top: -36px;
+    font-size:12px;
+    padding: 2px 2px 2px 5px;
+}
+.tile.small .tile-label-sub{
+	font-size:11px;
+}
+
+
+/* Inline visible-xs */
+@media screen and (max-width: 768px) {
+    .visible-xs-inline {
+        display: inline-block; !important
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .visible-xs-inline {
+        display: none; !important
+    }
+}

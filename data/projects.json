@@ -1,0 +1,207 @@
+[
+	{
+		id: "RBE1001",
+		title: "RBE 1001",
+		subtitle: "Robotics Class at WPI",
+		description: "A robot designed to pickup and score medals (tennis balls connected with rope)",
+		image: "content/rbe1001.jpg",
+		media: [
+		{
+			type: 'youtube',
+			youtubeId: "aGn3SdRKeWA",
+			label: "Medal Scoring on the Gold Rung",
+		},
+		{
+			type: 'image',
+			image: "https://lh4.googleusercontent.com/-95HFAllagLU/TuMKC8qpjpI/AAAAAAAAA18/_YrObXVMI5c/s0-I/IMG_20111210_015900.jpg",
+			label: "With medals in the robot",
+		},
+		{
+			type: 'image',
+			image: "https://lh4.googleusercontent.com/-yeIriS2sfqY/TuZnjAx9KAI/AAAAAAAAA18/utqDIBjrizs/s0-I/IMG_20111212_151703.jpg",
+			label: "The collector/scoring system",
+		},
+		],
+		links: [
+		{
+			label: 'Savage Soccer 2011 Rules',
+			url: 'http://users.wpi.edu/~savage/Archives/2011/rules.html',
+		}
+		],
+		properties: [
+		{
+			label: "Technologies",
+			values: ["Java", "DyIO"],
+		},
+		],
+	},
+	{
+		id: "RBE2001",
+		title: "RBE 2001",
+		subtitle: "Robotics Class at WPI",
+		description: 'A robot designed to remove and replace nuclear fuel rods',
+		image: "content/rbe2001.jpg",
+		media: [
+		{
+			type: 'youtube',
+			youtubeId: "6Ig5zaXRn_U",
+			label: "A video of the robot in action",
+		},
+		{
+			type: 'image',
+			image: "content/rbe2001.jpg",
+			label: "A side view of the robot",
+		},
+		],
+		properties: [
+		{
+			label: "Technologies",
+			values: ["C++", "VEX"],
+		},
+		{
+			label: "Platform",
+			value: "Arduino",
+		},
+		],
+	},
+	{
+		id: "RBE3002",
+		title: "RBE 3002",
+		subtitle: "Robotics Class at WPI",
+		description: 'A robot designed to autonomously navigate a field of obstacles',
+		image: "http://www.willowgarage.com/sites/default/files/robots_turtlebot/TurtleBot-Front-640w.png",
+		media: [
+		{
+			type: 'youtube',
+			youtubeId: "FZXB38EeMqo",
+			label: "Initial test of navigation",
+		},
+		{
+			type: 'youtube',
+			youtubeId: "WuImTcW-fY0",
+			label: "Final run of robot",
+		},
+		{
+			type: 'image',
+			image: "content/rbe3002.jpg",
+			label: "Timelapse of our final run",
+		},
+		],
+		properties: [
+		{
+			label: "Technologies",
+			values: ["ROS", "C++"],
+		},
+		{
+			label: "Platform",
+			value: "Linux",
+		},
+		],
+	},
+	{
+		id: "AERO",
+		title: "AERO",
+		subtitle: "Autonomous Exploration Rover",
+		description: 'An rover designed to autonomously navigate a simulated non-earth environment',
+		image: "http://lh4.googleusercontent.com/-NJw8ENX9_ZM/Ug00fPKyi9I/AAAAAAAAAU8/sfdt477LsN4/20130815_150514.jpg?imgmax=640",
+		media: [
+		{
+			type: 'image',
+			image: "http://lh4.googleusercontent.com/-NJw8ENX9_ZM/Ug00fPKyi9I/AAAAAAAAAU8/sfdt477LsN4/20130815_150514.jpg?imgmax=640",
+			label: "Test",
+		},
+		],
+		links: [
+		{
+			label: 'Team Website',
+			url: 'http://robot.wpi.edu/rover/',
+		},
+		{
+			label: 'Challenge Website',
+			url: 'http://challenge.wpi.edu',
+		}
+		],
+		properties: [
+		{
+			label: "Technologies",
+			values: ["ROS", "C++", "Python", "Arduino", "Device Drivers"],
+		},
+		{
+			label: "Platform",
+			value: "Linux",
+		},
+		],
+	},
+	{
+		id: "WeeCoder",
+		title: "WeeCoder",
+		subtitle: "A Windows 8 App",
+		description: 'A windows 8 application designed to teach young kids the fundamentals of programming',
+		image: "content/weecoder.png",
+		media: [
+		],
+		links: [
+		{
+			label: 'View in Windows Store',
+			url: 'http://apps.microsoft.com/windows/en-us/app/weecoder/00d00115-5b65-4269-92e0-368c6a889940',
+		}
+		],
+		properties: [
+		{
+			label: "Technologies",
+			values: ["C#", "XAML"],
+		},
+		{
+			label: "Platform",
+			value: "Windows 8.1",
+		},
+		],
+	},
+	{
+		id: "NetworkTables",
+		title: "Network Tables",
+		subtitle: "FIRST Robotics Library",
+		description: 'A library developed to help high school students communicate with their robot in for the FIRST Robotics Competition',
+		color: '#B22222',
+		media: [
+		],
+		links: [
+		{
+			label: 'Source Code',
+			url: 'https://usfirst.collab.net/sf/projects/networktables/',
+		}
+		],
+		properties: [
+		{
+			label: "Technologies",
+			values: ["C++", "Java"],
+		},
+		{
+			label: "Platforms",
+			values: ["cRIO", "Desktop"],
+		},
+		],
+	},
+	{
+		id: "AlwaysOn",
+		title: "Always On",
+		fullTitle: "Always On Relational Agents for Social Support of Isolated Older Adults",
+		subtitle: "Agent for Isolated Adults",
+		description: 'A virtual agent designed to interact with isolated elderly adults',
+		color: '#AFEEEE',
+		media: [
+		],
+		links: [
+		{
+			label: 'Project Page',
+			url: 'http://web.cs.wpi.edu/~rich/always/',
+		}
+		],
+		properties: [
+		{
+			label: "Technologies",
+			values: ["C#", "XAML"],
+		},
+		],
+	},
+]

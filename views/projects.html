@@ -1,0 +1,5 @@
+<div class="container">
+	<h1>Projects</h1>
+	<tile ng-repeat="project in projects" ng-click="ProjectService.navToProject(project)" label="{{project.title}}" sublabel="{{project.subtitle}}" content-background="{{ProjectService.projectBackgroundStyle(project)}}">
+	</tile>
+</div>
