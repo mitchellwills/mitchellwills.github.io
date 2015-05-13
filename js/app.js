@@ -1,5 +1,5 @@
-angular.module('home', ['ngRoute', 'ngAnimate', 'angulartics', 'angulartics.google.analytics'])
-	.config(function($routeProvider, $locationProvider, $rootScopeProvider) {
+angular.module('home', ['ngRoute', 'ngAnimate', 'angulartics', 'angulartics.google.analytics', 'ngMaterial'])
+	.config(function($routeProvider, $locationProvider, $rootScopeProvider, $mdThemingProvider) {
 		$locationProvider.html5Mode(true).hashPrefix('!');
 		$routeProvider.when('/', {
 			templateUrl: '/views/main.html',
@@ -29,6 +29,10 @@ angular.module('home', ['ngRoute', 'ngAnimate', 'angulartics', 'angulartics.goog
 		$routeProvider.otherwise({
 			templateUrl: '/views/404.html',
 		});
+
+	    $mdThemingProvider.theme('default')
+		.primaryPalette('indigo')
+		.accentPalette('orange');
 	})
 	.controller('NavCtrl', ['$scope', '$route', 'ProfileService', function($scope, $route, ProfileService){
 		$scope.nav = [
@@ -58,7 +62,7 @@ angular.module('home', ['ngRoute', 'ngAnimate', 'angulartics', 'angulartics.goog
 	.controller('MainCtrl', ['$scope', function($scope){
 	}])
 	.controller('EducationCtrl', ['$scope', function($scope){
-	
+
 	}])
 	.controller('ExperienceCtrl', ['$scope', 'ExperienceService', 'ProjectService', function($scope, ExperienceService, ProjectService){
 		$scope.ProjectService = ProjectService;
@@ -75,7 +79,7 @@ angular.module('home', ['ngRoute', 'ngAnimate', 'angulartics', 'angulartics.goog
 			}
 			else{
 				$scope.hover.clicked = true;
-				$scope.hover.item = item; 
+				$scope.hover.item = item;
 			}
 		};
 		$scope.unhoverItem = function(){
@@ -214,7 +218,7 @@ angular.module('home', ['ngRoute', 'ngAnimate', 'angulartics', 'angulartics.goog
 		title: "RBE 3002",
 		subtitle: "Robotics Class at WPI",
 		description: 'A robot designed to autonomously navigate a field of obstacles',
-		image: "http://www.willowgarage.com/sites/default/files/robots_turtlebot/TurtleBot-Front-640w.png",
+		image: "content/rbe3002.jpg",
 		media: [
 		{
 			type: 'youtube',
@@ -518,48 +522,29 @@ angular.module('home', ['ngRoute', 'ngAnimate', 'angulartics', 'angulartics.goog
 	{
 		title: "Linkedin",
 		url: "http://www.linkedin.com/in/mitchellwills/",
-		iconClass: "fa fa-linkedin-square fa-lg fa-fw",
+		iconClass: "fa fa-linkedin-square fa-2x fa-fw",
 		color: "#007bb6",
 	},
 	{
+		title: "Github Profile",
+		url: "http://github.com/mitchellwills",
+		iconClass: "fa fa-github-square fa-2x fa-fw",
+		color: "#000000",
+	},
+	{
 		title: "Google+",
-		url: "http://plus.google.com/+MitchellWills",
-		iconClass: "fa fa-google-plus-square fa-lg fa-fw",
+		url: "http://plus.google.com/+MitchellWillsRobots",
+		iconClass: "fa fa-google-plus-square fa-2x fa-fw",
 		color: "#dd4b39",
 	},
 	{
 		title: "Facebook",
 		url: "http://www.facebook.com/mitchellewills",
-		iconClass: "fa fa-facebook-square fa-lg fa-fw",
+		iconClass: "fa fa-facebook-square fa-2x fa-fw",
 		color: "#3b5998",
-	},
-	{
-		title: "Github Profile",
-		url: "http://github.com/mitchellwills",
-		iconClass: "fa fa-github fa-lg fa-fw",
 	},
 ];
 		return {
 			profiles: profiles,
-		};
-	})
-	.directive('tile', function() {
-		return {
-			restrict: 'E',
-			scope: {
-				contentBackground: '@',
-				label: '@',
-				sublabel: '@',
-			},
-			transclude: true,
-			replace: true,
-			template: '<div class="tile no-select">'+
-			'<div class="tile-content" style="background: {{contentBackground}};background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;" ng-transclude>'+
-			'</div>'+
-			'<div class="tile-label">'+
-			'<div>{{label}}</div>'+
-			'<div class="tile-label-sub">{{sublabel}}</div>'+
-			'</div>'+
-			'</div>',
 		};
 	});

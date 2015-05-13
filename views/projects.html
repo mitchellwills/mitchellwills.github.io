@@ -1,5 +1,18 @@
-<div class="container">
-	<h1>Projects</h1>
-	<tile ng-repeat="project in projects" ng-click="ProjectService.navToProject(project)" label="{{project.title}}" sublabel="{{project.subtitle}}" content-background="{{ProjectService.projectBackgroundStyle(project)}}">
-	</tile>
-</div>
+<md-card layout-padding style="width:60%;margin-left:auto;margin-right:auto">
+  <h1>Projects</h1>
+  <md-grid-list
+     md-cols-sm="1" md-cols-md="2" md-cols-gt-md="4"
+     md-row-height-gt-md="1:1" md-row-height="2:2"
+     md-gutter="12px" md-gutter-gt-sm="8px" >
+
+    <md-grid-tile ng-repeat="project in projects"
+		  ng-click="ProjectService.navToProject(project)"
+		  ng-attr-style="background:{{ProjectService.projectBackgroundStyle(project)}};background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;"
+		  md-rowspan="1" md-colspan="1">
+      <md-grid-tile-footer>
+        <h3>{{project.title}}</h3>
+	<h4>{{project.subtitle}}</h4>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+  </md-grid-list>
+</md-card>
