@@ -1,7 +1,7 @@
-<md-card layout-padding style="width:60%;margin-left:auto;margin-right:auto">
-  <h1>Projects</h1>
+<md-card layout-padding>
+  <h2 class="md-headline">Projects</h2>
   <md-grid-list
-     md-cols-sm="1" md-cols-md="2" md-cols-gt-md="4"
+     md-cols-sm="1" md-cols-md="2" md-cols-lg="3" md-cols-gt-lg="4"
      md-row-height-gt-md="1:1" md-row-height="2:2"
      md-gutter="12px" md-gutter-gt-sm="8px" >
 
@@ -9,7 +9,7 @@
 		  ng-click="ProjectService.navToProject(project)"
 		  ng-attr-style="background:{{ProjectService.projectBackgroundStyle(project)}};background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;"
 		  md-rowspan="1" md-colspan="1">
-      <md-grid-tile-footer>
+      <md-grid-tile-footer style="background: rgba(0,0,0,.5);">
         <h3>{{project.title}}</h3>
 	<h4>{{project.subtitle}}</h4>
       </md-grid-tile-footer>
